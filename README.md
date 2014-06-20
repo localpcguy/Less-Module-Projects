@@ -55,6 +55,8 @@ What you need to do next is go to `Administration -> Modules and services` and a
 
 Another approach is to create new solution that holds the Sitefinity project, `Telerik.Less` and `Telerik.Sitefinity.Less` projects. Then you could configure the output folder of `Telerik.Less` and `Telerik.Sitefinity.Less` projects to be the Sitefinity application's bin folder. Thus when you build the solution the module will be copied automatically and you would need to only refresh the page.
 
+Ensure that the account that will use the module (the application pool identity if the application is hosted in IIS, i.e. "IIS APPPOOL\[applicationpoolname]") should have write permissions to the Temp folder (`C:\Windows\Temp or C:\Users\user\AppData\Local\Temp`).
+
 Troubleshooting
 ---------------
 
